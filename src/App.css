@@ -2,6 +2,19 @@
   text-align: center;
 }
 
+.board-row{
+  display: grid;
+  justify-content: center;
+  align-content: space-evenly;
+  align-items: start;
+  justify-items: center;
+  grid-template-columns: 80px 80px 80px;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -20,4 +33,11 @@
 
 .App-link {
   color: #61dafb;
+}
+
+@media (max-width:800px){
+
+  .square {
+    width: 100%;
+  }
 }

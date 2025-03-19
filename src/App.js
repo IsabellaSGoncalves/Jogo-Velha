@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react'
 function App() {
-
+ 
   class Tabuleiro extends React.Component {
     constructor(props){
       super(props);
@@ -90,7 +90,6 @@ function calculateWinner(squares){
   return (
     <div className="App">
       <Tabuleiro/>
-      <Square/>
     </div>
   );
 }
