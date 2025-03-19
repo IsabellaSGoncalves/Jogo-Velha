@@ -1,5 +1,13 @@
-.App {
+body {
   text-align: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: rgb(73, 141, 197);
+  min-width: 100vw;
 }
 
 .board-row{
@@ -8,13 +16,25 @@
   align-content: space-evenly;
   align-items: start;
   justify-items: center;
-  grid-template-columns: 80px 80px 80px;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 2px;
 }
 
 .square {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgb(235, 193, 160);
+  border-radius: 2px;
+  background-color:rgb(235, 193, 160);
+  margin: 1px;
+  font-size: 60px;
+  font-weight: 700;
+  color: #a5537c;
+  box-shadow: 5px 5px  #475c86;
+  text-decoration: dashed;
 }
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -31,13 +51,13 @@
   color: white;
 }
 
+.status {
+  font-weight: 600;
+  font-size:30px;
+  margin: 10px;
+  color: white;
+  text-shadow: 3px 3px  #475c86;
+}
 .App-link {
   color: #61dafb;
-}
-
-@media (max-width:800px){
-
-  .square {
-    width: 100%;
-  }
 }
